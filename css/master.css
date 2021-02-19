@@ -42,7 +42,8 @@ nav{
 }
 
 @media screen and (max-width:991px) {
-  .centratur{
+
+  .container{
     width: 95%;
   }
   /* regole hamburger e drop */
@@ -103,5 +104,42 @@ nav{
 
 /* partner section */
 #partners{
-  background-color: #ccc;
+  background-color: #F3F5F9;
+  text-align: center;
+  padding: 3% 0;
+}
+
+.partners{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-area{
+  height: 100px;
+  width: 160px;
+  margin: 2% 1%;
+  min-height: 100px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#my-logo1{
+  background-image: url("../img/docker.svg");
+}
+#my-logo2{
+  background-image: url("../img/gitlab.svg");
+}
+#my-logo3{
+  background-image: url("../img/slack.svg");
+}
+#my-logo4{
+  background-image: url("../img/hashicorp.svg");
+}
+#my-logo5{
+  background-image: url("../img/hashicorp.svg");
+}
+#my-logo6{
+  background-image: url("../img/splunklogo.svg");
 }
