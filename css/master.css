@@ -3,3 +3,105 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+ul{
+  list-style-type: none;
+}
+
+.container {
+  padding: 10px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* [class*="-area"]{
+  min-height: 250px;
+  min-width: 400px;
+  background: aqua;
+} */
+/* regole header */
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-wrap: nowrap;
+}
+
+.img-logo-size{
+  height: 30px;
+}
+
+.lgmenu li{
+  display: inline-block;
+}
+
+.hamburger{
+  display: none;
+}
+
+@media screen and (max-width:991px) {
+  .centratur{
+    width: 95%;
+  }
+  /* regole hamburger e drop */
+  .hamburger{
+    display: block;
+    margin-right: 25px;
+    padding: 1%;
+    border: solid 1px blue;
+    border-radius: 10%;
+    color: blue;
+  }
+  .dropdown{
+    display: none;
+  }
+  .hamburger:hover .dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top:90px;
+    width: 100%;
+    background: #ccc;
+  }
+  .lgmenu{
+    display: none;
+  }
+}
+
+/* main */
+
+/* jumbotron section */
+#jumbotron{
+  background-color: #0067FF;
+  min-height: 400px;
+}
+
+.jumbotron{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5% 0;
+}
+
+.text-area{
+  max-width: 700px;
+  color: #fff;
+}
+
+.login-area{
+  background-color: #fff;
+  min-height: 400px;
+  max-width: 400px;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* partner section */
+#partners{
+  background-color: #ccc;
+}
